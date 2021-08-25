@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.children {
+    display: block;
+
+    &.collapsed {
+        display: none;
+    }
+}
+
+.row {
+
+    $step: 15px;
+
+    &.level-0 {
+        padding-left: 0;
+    }
+    &.level-1 {
+        padding-left: $step;
+    }
+    &.level-2 {
+        padding-left: $step * 2;
+    }
+    &.level-3 {
+        padding-left: $step * 3;
+    }
+    &.level-4 {
+        padding-left: $step * 4;
+    }
+}
